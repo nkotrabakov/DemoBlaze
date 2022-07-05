@@ -60,7 +60,7 @@ namespace DemoBlaze.UI.Actions
             return _driver.FindElement(elementLocator).Displayed;
         }
 
-        public string DismissAlert()
+        public string AlertText()
         {
             _wait.Until(ExpectedConditions.AlertIsPresent());   
             var alertText = _driver.SwitchTo().Alert().Text;

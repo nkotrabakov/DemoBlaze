@@ -12,7 +12,7 @@ Scenario: Register a new user
 	|username	|password|
 	|RANDOM_USER|pass123 |
 
-Scenario: Unsuccessful registration with already existing user
+Scenario: [Failing] Unsuccessful registration with already existing user
 	Given I navigate to home page
 	And I click on Sign up button
 	When I input username '<username>' and password '<password>' in signup form

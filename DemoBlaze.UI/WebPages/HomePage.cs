@@ -10,7 +10,7 @@ namespace DemoBlaze.WebPages
 
         public static readonly By SIGNUP_PASSWORD_FIELD = By.XPath("//input[@id='sign-password']");
 
-        public static readonly By SIGNUP_BUTTON = By.CssSelector("div#signInModal > div[role='document'] .btn.btn-primary");
+        public static readonly By SIGNUP_BUTTON = By.XPath("//button[text()='Sign up']");
 
         public static readonly By WELCOME_USER = By.XPath("//a[@id='nameofuser']");
 
@@ -18,7 +18,7 @@ namespace DemoBlaze.WebPages
 
         public static readonly By NAVBAR_LOGOUT = By.XPath("//a[@id='logout2']");
 
-        public static readonly By LOGIN_BUTTON = By.CssSelector("div#logInModal > div[role='document'] .btn.btn-primary");
+        public static readonly By LOGIN_BUTTON = By.XPath("//button[text()='Log in']");
 
         public static readonly By LOGIN_USERNAME_FIELD = By.XPath("//input[@id='loginusername']");
 

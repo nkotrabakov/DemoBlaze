@@ -126,15 +126,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Unsuccessful registration with already existing user")]
+        [NUnit.Framework.DescriptionAttribute("[Failing] Unsuccessful registration with already existing user")]
         [NUnit.Framework.TestCaseAttribute("johnnewton", "john123", null)]
-        public virtual void UnsuccessfulRegistrationWithAlreadyExistingUser(string username, string password, string[] exampleTags)
+        public virtual void FailingUnsuccessfulRegistrationWithAlreadyExistingUser(string username, string password, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("username", username);
             argumentsOfScenario.Add("password", password);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Unsuccessful registration with already existing user", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[Failing] Unsuccessful registration with already existing user", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 15
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

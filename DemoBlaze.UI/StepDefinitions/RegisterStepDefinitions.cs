@@ -1,6 +1,5 @@
 ﻿using DemoBlaze.Common.Helpers;
 using DemoBlaze.UI.Actions;
-using DemoBlaze.UI.Models;
 using DemoBlaze.UI.WebContext;
 using DemoBlaze.WebPages;
 using DemoBLaze.Common.Configurations;
@@ -54,13 +53,13 @@ namespace DemoBlaze.UI.StepDefinitions
         [Then(@"a message ""(.*)"" should appear")]
         public void ThenAMessageShouldAppear(string expectedMessage)
         {
-            Assert.AreEqual(expectedMessage, _webUser.DismissAlert(), "Sign up messages are not the same.");
+            Assert.That(expectedMessage, Is.EqualTo(_webUser.AlertText()), "Sign up messages are not the same.");
         }
 
         [Then(@"an error message ""(.*)"" should appear")]
         public void ThenAnErrorMessageShouldAppear(string expectedMessage)
         {
-            Assert.AreEqual(expectedMessage, _webUser.DismissAlert(), "Sign up messages are not the same.");
+            Assert.That(expectedMessage, Is.EqualTo(_webUser.AlertText()), "Sign up messages are not the same.");
         }
     }
 }
