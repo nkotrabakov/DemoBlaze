@@ -19,7 +19,7 @@ namespace DemoBlaze.UI.WebContext
             options.AddArgument("start-maximized");
             options.AddArgument("incognito");
             _driver = new ChromeDriver(options);
-            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
         }
 
         internal static IWebDriver GetChromeDriver()

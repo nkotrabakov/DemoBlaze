@@ -56,6 +56,5 @@ namespace DemoBlaze.StepDefinitions
 
             Assert.That(welcomeMessage.Displayed, "Welcome message is not displayed.");
         }
-
     }
 }

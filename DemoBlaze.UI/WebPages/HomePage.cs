@@ -11,6 +11,8 @@ namespace DemoBlaze.WebPages
         public static readonly By SIGNUP_PASSWORD_FIELD = By.XPath("//input[@id='sign-password']");
 
         public static readonly By SIGNUP_BUTTON = By.XPath("//button[text()='Sign up']");
+        
+        public static readonly By CLOSE_BUTTON = By.XPath("//button[text()='Close']");
 
         public static readonly By WELCOME_USER = By.XPath("//a[@id='nameofuser']");
 
@@ -23,5 +25,9 @@ namespace DemoBlaze.WebPages
         public static readonly By LOGIN_USERNAME_FIELD = By.XPath("//input[@id='loginusername']");
 
         public static readonly By LOGIN_PASSWORD_FIELD = By.XPath("//input[@id='loginpassword']");
+
+        public static readonly By PRODUCT_ID = By.XPath("//a[text()='Samsung galaxy s6']"); 
+
+        public static readonly By NAVBAR_CART = By.XPath("//a[@id='cartur']");
     }
 }

@@ -60,6 +60,17 @@ namespace DemoBlaze.UI.Actions
             return _driver.FindElement(elementLocator).Displayed;
         }
 
+        internal void WaitforStaleElement(By elementLocator)
+        {
+            _wait.Until(ExpectedConditions.StalenessOf(_driver.FindElement(elementLocator)));
+        }
+
+        public void DismissAlert()
+        {
+            _wait.Until(ExpectedConditions.AlertIsPresent());
+            _driver.SwitchTo().Alert().Accept();
+        }
+
         public string AlertText()
         {
             _wait.Until(ExpectedConditions.AlertIsPresent());   
